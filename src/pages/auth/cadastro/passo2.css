@@ -1,0 +1,35 @@
+.address-confirmation {
+    margin-top: 1rem;
+}
+
+.address-details {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.address-details p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0.2rem 0;
+}
+
+.adress-item {
+    margin-bottom: 1.7em;
+}
+
+.address-details p strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.edit-address {
+    color: #007BFF;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.edit-address:hover {
+    color: #0056b3;
+}

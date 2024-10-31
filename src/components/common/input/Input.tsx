@@ -20,6 +20,7 @@ function Input({ leftIcon, rightIcon, isPassword, ...props }: InputProps) {
             {leftIcon && <span className="input-icon">{leftIcon}</span>}
             <input
                 className="custom-input"
+                style={{ paddingLeft: leftIcon ? 40 : 0 }}
                 {...props}
             />
             {isPassword && (
