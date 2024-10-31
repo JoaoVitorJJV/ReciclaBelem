@@ -1,0 +1,49 @@
+.input-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 0.8rem 0.8rem 2.5rem;
+    /* Espaçamento para o ícone à esquerda */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+    /* Transição suave para hover e focus */
+}
+
+.input-group input:hover,
+.input-group input:focus {
+    border-color: #4285f4;
+    /* Cor da borda no hover e focus */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* Sombra leve no hover e focus */
+}
+
+.input-group .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.input-group .input-icon-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+    font-size: 0.95rem;
+}
