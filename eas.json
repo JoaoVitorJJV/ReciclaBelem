@@ -3,8 +3,9 @@
         "version": ">= 2.0.0"
     },
     "build": {
-        "preview": {
+        "production": {
             "android": {
+                "image": "latest",
                 "buildType": "apk"
             }
         }
