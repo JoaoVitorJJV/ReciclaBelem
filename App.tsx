@@ -6,6 +6,8 @@ import Home from './src/pages/home/home';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import History from './src/pages/home/history';
+import ConfirmarColeta from './src/pages/home/confirmarColeta';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -47,8 +49,8 @@ const TabNavigation = () => {
       })}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Calendar" component={Home} />
-      <Tab.Screen name="Location" component={Home} />
+      <Tab.Screen name="Calendar" component={History} />
+      <Tab.Screen name="Location" component={ConfirmarColeta} />
       <Tab.Screen name="Profile" component={Home} />
     </Tab.Navigator>
   );
