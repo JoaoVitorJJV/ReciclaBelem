@@ -8,6 +8,12 @@ import { View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import History from './src/pages/home/history';
 import ConfirmarColeta from './src/pages/home/confirmarColeta';
+import Profile from './src/pages/home/profile';
+import PrivateInformations from './src/pages/profile/personalInformation';
+import Payments from './src/pages/profile/payments';
+import AddCreditCard from './src/pages/profile/addCreditCard';
+import Notifications from './src/pages/profile/notification';
+import FAQ from './src/pages/profile/faq';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -51,7 +57,7 @@ const TabNavigation = () => {
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Calendar" component={History} />
       <Tab.Screen name="Location" component={ConfirmarColeta} />
-      <Tab.Screen name="Profile" component={Home} />
+      <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>
   );
 }
@@ -65,6 +71,11 @@ export default function App() {
         <Stack.Screen name="Cadastro" component={CadastroPassos} />
         {/* <Stack.Screen name="Home" component={Home} /> */}
         <Stack.Screen name="Main" component={TabNavigation} />
+        <Stack.Screen name="PrivateInformations" component={PrivateInformations} />
+        <Stack.Screen name="Payments" component={Payments} />
+        <Stack.Screen name="AddPayment" component={AddCreditCard} />
+        <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name="FAQ" component={FAQ} />
       </Stack.Navigator>
     </NavigationContainer>
   );
